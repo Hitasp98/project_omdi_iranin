@@ -25,6 +25,9 @@ class pro1():
                 ss+="\t"+self.lis[s]
 #2.7 dar akharm nmaysh
         print(ss)
+#2.8sakht method save file 
+        with open("test.text","w") as f:
+                f.write(ss)
 # 3 sakht class pro
 class pro(pro1):
 # 4 da ebtada vrodi haro moshkas mikonim
