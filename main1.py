@@ -41,9 +41,12 @@ for s in range(1,101):
                 ss+="\t"+a[s]
 #17 dar akharm nmaysh
 print(ss)
-#18sakht method save file 
-with open("test.bat","w") as f:
+#18sakht method save file
+try:
+    with open("test.bat","w") as f:
                 f.write(ss)
+except TypError:
+    print("There was a type error!")
 
 
 
